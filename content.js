@@ -1,16 +1,10 @@
-function clickPlayButtonWhenPaused() {
-  const videoPlayer = document.querySelector('.html5-video-player'); // Selector for YouTube's video player
+function clickButtonWhenAvailable() {
+  const button = document.querySelector('button'); // Replace 'button' with your button selector
 
-  if (videoPlayer) {
-    const isPaused = videoPlayer.paused;
-
-    if (isPaused) {
-      const playButton = document.querySelector('.ytp-play-button'); // Selector for YouTube's play button
-      if (playButton) {
-        playButton.click();
-      }
-    }
+  if (button) {
+    button.click();
+    clearInterval(checkInterval); // Stop checking once the button is clicked
   }
 }
 
-const checkInterval = setInterval(clickPlayButtonWhenPaused, 1000); // Check every 1 second
+const checkInterval = setInterval(clickButtonWhenAvailable, 1000); // Check every 1 second
