@@ -8,5 +8,5 @@
       "matches": ["*://www.youtube.com/*"],
       "js": ["content.js"]
     }
-  ],
+  ]
 }
