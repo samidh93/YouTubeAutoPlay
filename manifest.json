@@ -3,16 +3,10 @@
   "name": "YouTube AutoPlay",
   "version": "1.0",
   "permissions": ["activeTab"],
-  "action": {
-    "default_popup": "popup.html"
-  },
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
       "js": ["content.js"]
     }
   ],
-  "browser_action": {
-    "default_popup": "popup.html"
-  }
 }
