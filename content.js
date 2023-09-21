@@ -1,5 +1,5 @@
 function clickButtonWhenAvailable() {
-  const button = document.querySelector('button'); // Replace 'button' with your button selector
+  const button = document.querySelector("#confirm-button > yt-button-shape > button") 
 
   if (button) {
     button.click();
